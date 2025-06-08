@@ -20,7 +20,7 @@
 
 # # Initialize your YOLO model
 # model = YOLO(
-#     "/home/aun1x/final-year-backend/fastapi-backend/models/take1_50e_8b_y112/best.pt"
+#     "/home/raspberry/agrifusion-fastapi/models/take1_50e_8b_y112/best.pt"
 # )
 
 # # Configure Cloudinary with environment variables
@@ -131,9 +131,7 @@ load_dotenv()
 app = FastAPI()
 
 # Initialize YOLO model
-model = YOLO(
-    "/home/aun1x/final-year-backend/fastapi-backend/models/take1_50e_8b_y112/best.pt"
-)
+model = YOLO("/home/raspberry/agrifusion-fastapi/models/take1_50e_8b_y112/best.pt")
 
 # Configure Cloudinary
 cloudinary.config(

@@ -4,9 +4,7 @@ import numpy as np
 
 # Load the YOLOv8 model
 # model = YOLO("/run/media/aun1x/New Volume/final year project/runs/detect/4_take1_50e_8b_y116/weights/best.pt")
-model = YOLO(
-    "/home/aun1x/final-year-backend/fastapi-backend/models/take1_50e_8b_y112/best.pt"
-)
+model = YOLO("/home/raspberry/agrifusion-fastapi/models/take1_50e_8b_y112/best.pt")
 
 
 # Run inference on the image
